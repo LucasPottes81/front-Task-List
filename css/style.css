@@ -1,0 +1,26 @@
+body{
+    background-color: #f2e8e1;
+}
+
+.container {
+    display: flex;
+    width: 50vw;
+    height: 75vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    overflow: hidden;
+    border: 1px solid black; 
+}
+
+.copyright{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    color:blueviolet
+}

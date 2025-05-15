@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Task Manager</title>
+  <title>Faz aí Po!</title>
+  <link rel="icon" type="image/png" href="assets/icon-fazAiPo.png" />
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Bem-vindo ao Task Manager</h1>
-    <button onclick="location.href='register.html'">Cadastro</button>
+ <div class="container">
+  <div class="parte1">
+    <h1 id="titulo">Bem-vindo ao <br>"Faz aí Pô!"</h1>
+    <button onclick="location.href='register.html'">Cadastro</button> <br>
     <button onclick="location.href='login.html'">Login</button>
   </div>
-  <script src="js/index.js"></script>
+  <div class="parte2">
+    <!-- Conteúdo da segunda parte -->
+    <p>Seu serviço de criação de tarefas. Aqui você pode criar as tarefas do seu dia e organizar sua rotina.</p>
+     <img src="assets/icon-fazAiPo.png" alt="Descrição da imagem" style="max-width:60%; height:auto; border-radius: 100%; display: block; margin: 0 auto;" />
+  </div>
+</div>
+
+<p class="copyright"> @Todos os direitos reservados</p>
+
+<script src="js/index.js"></script>
 </body>
 </html>
