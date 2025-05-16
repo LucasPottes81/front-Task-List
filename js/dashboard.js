@@ -59,24 +59,25 @@ taskForm.addEventListener('submit', async (e) => {
 
 // ========== Renderizar tarefas ==========
 function renderTasks(tasks) {
+  const taskList = document.getElementById('taskList');
   taskList.innerHTML = '';
+
   tasks.forEach(task => {
     const li = document.createElement('li');
-    const span = document.createElement('span');
-    span.textContent = task.title;
+    li.className = 'card';
 
-    const editBtn = document.createElement('button');
-    editBtn.textContent = 'Editar';
-    editBtn.classList.add('edit');
-    editBtn.onclick = () => openEditModal(task.id, task.title);
+   li.innerHTML = `
+  <span>${task.title}</span>
+  <div class="card-buttons">
+    <button class="edit-btn" data-id="${task.id}">Editar</button>
+    <button class="delete-btn" data-id="${task.id}">Excluir</button>
+  </div>
+`;
 
-    const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Excluir';
-    deleteBtn.onclick = () => deleteTask(task.id);
+    // botões de editar e excluir
+   li.querySelector('.edit-btn').onclick = () => openEditModal(task.id, task.title);
+   li.querySelector('.delete-btn').onclick = () => deleteTask(task.id);
 
-    li.appendChild(span);
-    li.appendChild(editBtn);
-    li.appendChild(deleteBtn);
 
     taskList.appendChild(li);
   });
