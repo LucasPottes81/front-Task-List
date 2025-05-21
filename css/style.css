@@ -31,7 +31,7 @@ body{
 }
 
 /* Responsividade */
-@media (max-width: 900px) {
+@media (max-width: 932px) {
   .container {
     width: 90vw;
     height: 100vh;

@@ -54,3 +54,23 @@ button {
 button:hover {
     transform: scale(1.08);
 }
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .container {
+        width: 70vw;
+        height: 80vh;
+    }
+
+    #titulo-cadastro {
+        font-size: 2.5rem;
+        text-align: left;
+        margin-top: -100px;
+        margin-bottom: 150px;
+    }
+
+    button {
+        width: auto;
+        font-size: 1.1rem;
+    }
+}
