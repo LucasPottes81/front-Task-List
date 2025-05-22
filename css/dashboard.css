@@ -217,3 +217,82 @@ ul#taskList {
   padding: 0;
   margin: 0;
 }
+
+@media (max-width: 932px) {
+  .containerDashboard {
+    padding: 40px 10px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+  }
+
+  #titulo-Dashboard {
+    font-size: 1.5rem;
+  }
+
+  form input {
+    max-width: 100%;
+    font-size: 14px; /* menor no input também */
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  ul#taskList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Responsividade para os cards */
+  .card {
+    padding: 16px;
+    min-width: 180px;
+    max-width: 90%;
+    min-height: 100px;
+  }
+
+  /* Texto da tarefa (dentro do card) */
+  .card span {
+    font-size: 14px;
+  }
+
+  /* Botões menores */
+  .card .edit-btn,
+  .card .delete-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  /* Botão sair menor e centralizado */
+  #logoutBtn {
+    width: 160px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 932px) {
+  .containerDashboard {
+    padding: 40px 10px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 80vh;   
+    box-sizing: border-box;
+  }
+
+  #titulo-Dashboard {
+    font-size: 1.5rem;
+  }
+
+  form input {
+    max-width: 100%; 
+  }
+
+  ul#taskList {
+    flex-direction: column; 
+    align-items: center;    
+  }
+}
