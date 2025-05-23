@@ -46,10 +46,17 @@ body{
     color: black;
   }
 
-   #titulo-login, #titulo-cadastro {
+   #titulo-login {
         font-size: 3rem; /* Título maior */
         text-align: center;
     }
+
+    #titulo-cadastro {
+        font-size: 3rem; /* Título maior */
+        text-align: center;
+        color:rgb(255, 138, 20);
+    }
+
 
     input {
         font-size: 1.2rem; /* Texto do input maior */
